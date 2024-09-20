@@ -1,5 +1,5 @@
 import icons from 'url:../../img/icons.svg';
-import { Fraction } from 'fractional';
+// import { Fraction } from 'fractional';
 import Views from './view.js';
 
 class ReceipeView extends Views {
@@ -129,7 +129,8 @@ class ReceipeView extends Views {
   }
 
   _renderIngredients(ing) {
-    const quantity = ing.quantity ? new Fraction(ing.quantity).toString() : '';
+    // const quantity = ing.quantity ? new Fraction(ing.quantity).toString() : '';
+    const quantity = ing.quantity ? ing.quantity : '';
 
     const html = `
         <li class="recipe__ingredient">
